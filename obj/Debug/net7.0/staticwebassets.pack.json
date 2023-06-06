@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\57267874800\\Desktop\\projeto-gamer\\wwwroot\\img\\Teams\\818cef12-fcc4-4f9e-927a-4495c78f740b.jpg",
+      "PackagePath": "staticwebassets\\img\\Teams\\818cef12-fcc4-4f9e-927a-4495c78f740b.jpg"
+    },
+    {
       "Id": "C:\\Users\\57267874800\\Desktop\\projeto-gamer\\wwwroot\\img\\Teams\\Ovo-PNG.png",
       "PackagePath": "staticwebassets\\img\\Teams\\Ovo-PNG.png"
     },
@@ -35,6 +39,14 @@
     {
       "Id": "C:\\Users\\57267874800\\Desktop\\projeto-gamer\\wwwroot\\img\\Teams\\padrao.jpg",
       "PackagePath": "staticwebassets\\img\\Teams\\padrao.jpg"
+    },
+    {
+      "Id": "C:\\Users\\57267874800\\Desktop\\projeto-gamer\\wwwroot\\img\\Teams\\padrao.png",
+      "PackagePath": "staticwebassets\\img\\Teams\\padrao.png"
+    },
+    {
+      "Id": "C:\\Users\\57267874800\\Desktop\\projeto-gamer\\wwwroot\\img\\Teams\\quarta.png",
+      "PackagePath": "staticwebassets\\img\\Teams\\quarta.png"
     },
     {
       "Id": "C:\\Users\\57267874800\\Desktop\\projeto-gamer\\wwwroot\\img\\Teams\\quinta.png",

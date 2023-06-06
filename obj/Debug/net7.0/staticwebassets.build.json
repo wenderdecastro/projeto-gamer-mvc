@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "hp2reHT6O5htbnhjY7/2GX4yDH8pltRZRqq5Mn1VarM=",
+  "Hash": "jUn1S8Lohhs3WRw7ges06ImjECBHwG3c5EY436W8KNw=",
   "Source": "projeto-gamer",
   "BasePath": "_content/projeto-gamer",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\57267874800\\Desktop\\projeto-gamer\\wwwroot\\img\\Teams\\818cef12-fcc4-4f9e-927a-4495c78f740b.jpg",
+      "SourceId": "projeto-gamer",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\57267874800\\Desktop\\projeto-gamer\\wwwroot\\",
+      "BasePath": "_content/projeto-gamer",
+      "RelativePath": "img/Teams/818cef12-fcc4-4f9e-927a-4495c78f740b.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Teams\\818cef12-fcc4-4f9e-927a-4495c78f740b.jpg"
     },
     {
       "Identity": "C:\\Users\\57267874800\\Desktop\\projeto-gamer\\wwwroot\\img\\Teams\\a.bat",
@@ -185,6 +202,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\Teams\\padrao.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\57267874800\\Desktop\\projeto-gamer\\wwwroot\\img\\Teams\\padrao.png",
+      "SourceId": "projeto-gamer",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\57267874800\\Desktop\\projeto-gamer\\wwwroot\\",
+      "BasePath": "_content/projeto-gamer",
+      "RelativePath": "img/Teams/padrao.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Teams\\padrao.png"
+    },
+    {
+      "Identity": "C:\\Users\\57267874800\\Desktop\\projeto-gamer\\wwwroot\\img\\Teams\\quarta.png",
+      "SourceId": "projeto-gamer",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\57267874800\\Desktop\\projeto-gamer\\wwwroot\\",
+      "BasePath": "_content/projeto-gamer",
+      "RelativePath": "img/Teams/quarta.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Teams\\quarta.png"
     },
     {
       "Identity": "C:\\Users\\57267874800\\Desktop\\projeto-gamer\\wwwroot\\img\\Teams\\quinta.png",
