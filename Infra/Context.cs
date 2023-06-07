@@ -31,7 +31,6 @@ namespace projeto_gamer.Infra
 
         public DbSet<Player> Player {get; set;}
         public DbSet<Team> Team {get; set;}
-        public DbSet<Login> Login {get; set;}
             
 }
 }

@@ -1,15 +1,7 @@
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
+using Microsoft.AspNetCore.Http;
 using projeto_gamer.Infra;
 using projeto_gamer.Models;
-using System.Web;
-using Microsoft.AspNetCore.Http;
-
 
 namespace projeto_gamer.Controllers
 {
@@ -21,58 +13,43 @@ namespace projeto_gamer.Controllers
 
         private readonly ILogger<LoginController> _logger;
 
-        private readonly IHttpContextAccessor _httpContextAccessor;
-        IHttpContextAccessor httpContextAccessor;
-
         public LoginController(ILogger<LoginController> logger)
         {
             _logger = logger;
-            _httpContextAccessor = httpContextAccessor;
         }
 
+        [TempData]
+        public string Message {get; set;}
+
         [HttpGet]
-        [Route("SignIn")]
-        public IActionResult Index()
+        public IActionResult Login()
         {
+            ViewBag.Email = HttpContext.Session.GetString("Email");
             return View();
         }
 
-
         [HttpPost]
-        public IActionResult Login(string email, string senha)
+        public IActionResult Login(IFormCollection form)
         {
 
-            bool Logged = LogUser(email, senha);
+            string email = form["email"].ToString();
+            string password = form["password"].ToString();
 
-            if (Logged)
-            {
-                _httpContextAccessor.HttpContext.Session.SetString("Email", email);
+            Player foundPlayer = c.Player.First(j => j.Email == email && j.Password == password);
 
-                return LocalRedirect("~/Team/List");
-            }
-            else
+            if (foundPlayer != null)
             {
-                return View();
+                HttpContext.Session.SetString("Email", foundPlayer.Email);
+
+                return LocalRedirect("~/");
             }
+
+            Message = "Dados Invalidos!";
+            return View();
+            
+
 
         }
-
-
-        [Route("LogUser")]
-        public bool LogUser(string email, string password)
-        {
-
-            Login newLogin = c.Login.First(l => l.Email == email);
-
-            if (newLogin.Email == email && newLogin.Password == password)
-            {
-                return true;
-            }
-
-            return false;
-        }
-
-
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

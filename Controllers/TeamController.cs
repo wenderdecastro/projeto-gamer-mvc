@@ -27,6 +27,7 @@ namespace projeto_gamer.Controllers
         [Route("List")] //http://localhost/Team/List
         public IActionResult Index()
         {
+            ViewBag.Email = HttpContext.Session.GetString("Email");
             ViewBag.Team = c.Team.ToList(); //variavel que armazena equipes do db
 
             //retorna a view de equipe (TELA)
@@ -82,7 +83,9 @@ namespace projeto_gamer.Controllers
         public IActionResult Edit(int id)
         {
 
-            Team foundTeam = c.Team.First(e => e.Id == id);
+            ViewBag.Email = HttpContext.Session.GetString("Email");
+
+            Team foundTeam = c.Team.FirstOrDefault(e => e.Id == id)!;
 
             ViewBag.Team = foundTeam;
 
