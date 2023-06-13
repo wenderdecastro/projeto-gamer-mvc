@@ -19,35 +19,47 @@ namespace projeto_gamer.Controllers
         }
 
         [TempData]
-        public string Message {get; set;}
+        public string Message { get; set; }
 
-        [HttpGet]
-        public IActionResult Login()
+        [Route("Login")]
+        public IActionResult Index()
         {
-            ViewBag.Email = HttpContext.Session.GetString("Email");
+            ViewBag.UserName = HttpContext.Session.GetString("UserName");
             return View();
         }
 
-        [HttpPost]
+        [Route("SignIn")]
         public IActionResult Login(IFormCollection form)
         {
 
-            string email = form["email"].ToString();
-            string password = form["password"].ToString();
+            string email = form["Email"].ToString();
+            string password = form["Password"].ToString();
 
             Player foundPlayer = c.Player.First(j => j.Email == email && j.Password == password);
 
             if (foundPlayer != null)
             {
-                HttpContext.Session.SetString("Email", foundPlayer.Email);
+                HttpContext.Session.SetString("UserName", foundPlayer.Name);
 
                 return LocalRedirect("~/");
             }
+            else
+            {
+                Message = "Dados Invalidos!";
+                return LocalRedirect("~/Login/Login");
 
-            Message = "Dados Invalidos!";
-            return View();
-            
+            }
 
+
+        }
+
+        [Route("Logout")]
+        public IActionResult SignOff()
+        {
+
+            HttpContext.Session.Remove("UserName");
+
+            return LocalRedirect("~/");
 
         }
 

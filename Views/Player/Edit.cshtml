@@ -6,6 +6,13 @@
 
 <h1>Edit Team</h1>
 
+@if (ViewBag.UserName == null)
+{
+    <a class="navbar-brand" asp-area="" asp-controller="Login" asp-action="Index">
+        Login
+    </a>
+}
+else{
 <form method="post" action='@Url.Action("Update")'>
 
     <input type="hidden" name="PlayerId" value="@ViewBag.player.PlayerId">
@@ -16,3 +23,5 @@
     <button type="submit">Update</button>
 
 </form>
+
+}

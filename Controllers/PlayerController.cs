@@ -26,7 +26,7 @@ namespace projeto_gamer.Controllers
         [Route("List")] //http://localhost/Player/List
         public IActionResult Index()
         {
-            ViewBag.Email = HttpContext.Session.GetString("Email");
+           ViewBag.UserName = HttpContext.Session.GetString("UserName");
             ViewBag.Player = c.Player.ToList();
             ViewBag.Team = c.Team.ToList(); //variavel que armazena equipes e players do db
 
@@ -70,7 +70,7 @@ namespace projeto_gamer.Controllers
         [Route("Edit/id")]
         public IActionResult Edit(int id)
         {
-            ViewBag.Email = HttpContext.Session.GetString("Email");
+            ViewBag.UserName = HttpContext.Session.GetString("UserName");
 
             Player foundPlayer = c.Player.First(e => e.PlayerId == id);
 
