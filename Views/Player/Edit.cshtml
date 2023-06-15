@@ -1,8 +1,10 @@
-@model Team;
+@* @model Team;
 
 @{
     ViewData["Title"] = "Edit";
 }
+
+<html lang="pt-BR">
 
 <h1>Edit Team</h1>
 
@@ -25,3 +27,51 @@ else{
 </form>
 
 }
+</html> *@
+
+@model Team
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/style.css">
+    <link rel="stylesheet" href="~/css/jogadores.css">
+</head>
+
+@if (ViewBag.UserName == null)
+{
+}
+else{
+ <main>
+
+        <section class="container-grid cadastro-equipes">
+
+
+            <form method="post" action='@Url.Action("Update")' class="frm-cad-equipe">
+                <div class="cadequipe-titulo">
+                    <h1>Editar jogador</h1>
+                    <hr>
+                </div>
+
+                <input class="campo-entrada" type="hidden" name="PlayerId" value="@ViewBag.player.PlayerId">
+
+                <input class="campo-entrada" type="text" name="Name" value="@ViewBag.player.Name">
+                <input class="campo-entrada" type="email" name="Email" value="@ViewBag.player.Email">
+                
+                <button type="submit" >Atualizar</button>
+ 
+            </form>
+
+        </section>
+    </main>
+}
+
+</html>

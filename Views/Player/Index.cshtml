@@ -6,6 +6,8 @@
 
 <!DOCTYPE html>
 <html lang="pt-BR">
+
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,7 +15,6 @@
     <title>Equipes</title>
     <link rel="stylesheet" href="~/css/style.css">
     <link rel="stylesheet" href="~/css/jogadores.css">
-
 </head>
 @* 
 @if (ViewBag.UserName == null)
@@ -126,8 +127,8 @@ else{
                     <td>@player.Name</td>
                     <td>@player.Email</td>  
                     <td>
-                        <a asp-area="" asp-controller="Player" asp-action="Delete" asp-route-id="@player.PlayerId"><img class="yellow-trash" src="./assets/trash.png" alt=""></a> 
-                        <a asp-area="" asp-controller="Player"  asp-action="Edit" asp-route-id="@player.PlayerId"><button class="btn btn-primary">Edit</button></a>
+                        <a asp-area="" asp-controller="Player" asp-action="Delete" asp-route-id="@player.PlayerId"><img class="yellow-trash" src="~/assets/trash.png" alt=""></a> 
+                        <a asp-area="" asp-controller="Player"  asp-action="Edit" asp-route-id="@player.PlayerId"><img class="yellow-trash" src="~/assets/edit.svg" alt=""></a>
                     </td>
                 </tr>
             }

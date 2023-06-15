@@ -4,6 +4,8 @@
     ViewData["Title"] = "Team";
 }
 
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -61,7 +63,7 @@ else
                         </td>
                         <td>
                             <a asp-area="" asp-controller="Team" asp-action="Delete" asp-route-id="@team.Id"><img class="yellow-trash" src="~/assets/trash.png" alt=""></a> 
-                            <a asp-area="" asp-controller="Team"  asp-action="Edit" asp-route-id="@team.Id"></a>
+                        <a asp-area="" asp-controller="Team"  asp-action="Edit" asp-route-id="@team.Id"><img class="yellow-trash" src="~/assets/edit.svg" alt=""></a>
                         </td>
                     </tr>
             }
@@ -72,3 +74,4 @@ else
 </main>
 
 }
+</html>

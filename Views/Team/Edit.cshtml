@@ -1,4 +1,4 @@
-@model Team;
+@* @model Team;
 
 @{
     ViewData["Title"] = "Edit";
@@ -25,4 +25,55 @@ else{
 
 </form>
 
+} *@
+
+@model Team
+
+@{
+    ViewData["Title"] = "Edit";
 }
+
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamer</title>
+    <link rel="stylesheet" href="~/css/style.css">
+    <link rel="stylesheet" href="~/css/equipes.css">
+</head>
+
+@if (ViewBag.UserName == null)
+{
+}
+else
+{
+<main>
+
+        <section class="container-grid cadastro-equipes">
+            
+            
+            <form method="post" action='@Url.Action("Update")' enctype="multipart/form-data" class="frm-cad-equipe">
+                <div class="cadequipe-titulo">
+                    <h1>Editar equipe</h1>
+                    <hr>
+                </div>
+
+                <input class="campo-entrada" type="hidden" name="Id" value="@ViewBag.team.Id">
+                <input class="campo-entrada" type="text" name="Name" value="@ViewBag.team.Name">
+                <label class="foto" for="foto-file">
+                    Nenuma imagem selecionada...
+                    <input  type="file" id="foto-file"name="Image" value="@ViewBag.team.Image">
+                </label>
+                
+                <button type="submit">Atualizar</button>
+                
+                
+            </form>
+
+    </section>
+</main>
+
+}
+</html>

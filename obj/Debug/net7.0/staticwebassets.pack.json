@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\assets\\Botao_voltar_ao_topo.svg"
     },
     {
+      "Id": "C:\\Users\\57267874800\\Desktop\\projeto-gamer\\wwwroot\\assets\\edit.svg",
+      "PackagePath": "staticwebassets\\assets\\edit.svg"
+    },
+    {
       "Id": "C:\\Users\\57267874800\\Desktop\\projeto-gamer\\wwwroot\\assets\\envelope-icon.png",
       "PackagePath": "staticwebassets\\assets\\envelope-icon.png"
     },
@@ -201,6 +205,10 @@
       "PackagePath": "staticwebassets\\assets\\logotipo-gamer.svg"
     },
     {
+      "Id": "C:\\Users\\57267874800\\Desktop\\projeto-gamer\\wwwroot\\assets\\logout.svg",
+      "PackagePath": "staticwebassets\\assets\\logout.svg"
+    },
+    {
       "Id": "C:\\Users\\57267874800\\Desktop\\projeto-gamer\\wwwroot\\assets\\market-icon.png",
       "PackagePath": "staticwebassets\\assets\\market-icon.png"
     },
@@ -363,6 +371,10 @@
     {
       "Id": "C:\\Users\\57267874800\\Desktop\\projeto-gamer\\wwwroot\\img\\Teams\\padrao.png",
       "PackagePath": "staticwebassets\\img\\Teams\\padrao.png"
+    },
+    {
+      "Id": "C:\\Users\\57267874800\\Desktop\\projeto-gamer\\wwwroot\\img\\Teams\\quinta.png",
+      "PackagePath": "staticwebassets\\img\\Teams\\quinta.png"
     },
     {
       "Id": "C:\\Users\\57267874800\\Desktop\\projeto-gamer\\wwwroot\\img\\Teams\\sexta.png",

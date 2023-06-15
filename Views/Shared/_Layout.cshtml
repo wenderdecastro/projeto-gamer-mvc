@@ -91,7 +91,7 @@
                         }
                         else{
                         <a asp-area="" asp-controller="Login" asp-action="Logout">
-                        <img src="~/assets/user-icon.svg" alt="user-login">
+                        <img src="~/assets/logout.svg" alt="user-login">
                         </a>
                         }
                         <img src="~/assets/market-icon.png" alt="market icon">
@@ -138,11 +138,17 @@
                 </div>
 
                 <ul class="menu-footer">
-                    <li class="menu-ftitem"><a href="#">Início</a></li>
-                    <li class="menu-ftitem"><a href="#">Jogadores</a></li>
-                    <li class="menu-ftitem"><a href="#">Notícias</a></li>
-                    <li class="menu-ftitem"><a href="#">Login</a></li>
-                    <li class="menu-ftitem" id="link-equipe"><a href="#">Equipes</a></li>
+                    <li class="menu-ftitem"><a asp-controller="Home" asp-action="Index">Início</a></li>
+                    <li class="menu-ftitem"><a asp-controller="Player" asp-action="Index">Jogadores</a></li>
+                    <li class="menu-ftitem"><a asp-controller="Home" asp-action="Index">Notícias</a></li>
+                    @if (ViewBag.UserName == null)
+                    {
+                    <li class="menu-ftitem"><a asp-controller="Login" asp-action="Index">Login</a></li>
+                    }
+                    else{
+                    <li class="menu-ftitem"><a asp-controller="Login" asp-action="Logout">Login</a></li>
+                    }
+                    <li class="menu-ftitem" id="link-equipe"><a asp-controller="Team" asp-action="Index">Equipes</a></li>
                 </ul>
             </div>
 

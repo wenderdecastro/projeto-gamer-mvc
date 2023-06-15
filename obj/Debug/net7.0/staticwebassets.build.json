@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "T5JAwzdk18xODLYa9kFeuY/yn2t1uS9s19i1p6ctX6c=",
+  "Hash": "6ouXlZL3RxTCbG5/JTpuHDW6q/G/WIuRoABFJEXQYMo=",
   "Source": "projeto-gamer",
   "BasePath": "_content/projeto-gamer",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\Botao_voltar_ao_topo.svg"
+    },
+    {
+      "Identity": "C:\\Users\\57267874800\\Desktop\\projeto-gamer\\wwwroot\\assets\\edit.svg",
+      "SourceId": "projeto-gamer",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\57267874800\\Desktop\\projeto-gamer\\wwwroot\\",
+      "BasePath": "_content/projeto-gamer",
+      "RelativePath": "assets/edit.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\edit.svg"
     },
     {
       "Identity": "C:\\Users\\57267874800\\Desktop\\projeto-gamer\\wwwroot\\assets\\envelope-icon.png",
@@ -884,6 +901,23 @@
       "OriginalItemSpec": "wwwroot\\assets\\logotipo-gamer.svg"
     },
     {
+      "Identity": "C:\\Users\\57267874800\\Desktop\\projeto-gamer\\wwwroot\\assets\\logout.svg",
+      "SourceId": "projeto-gamer",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\57267874800\\Desktop\\projeto-gamer\\wwwroot\\",
+      "BasePath": "_content/projeto-gamer",
+      "RelativePath": "assets/logout.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\logout.svg"
+    },
+    {
       "Identity": "C:\\Users\\57267874800\\Desktop\\projeto-gamer\\wwwroot\\assets\\market-icon.png",
       "SourceId": "projeto-gamer",
       "SourceType": "Discovered",
@@ -1579,6 +1613,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\Teams\\padrao.png"
+    },
+    {
+      "Identity": "C:\\Users\\57267874800\\Desktop\\projeto-gamer\\wwwroot\\img\\Teams\\quinta.png",
+      "SourceId": "projeto-gamer",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\57267874800\\Desktop\\projeto-gamer\\wwwroot\\",
+      "BasePath": "_content/projeto-gamer",
+      "RelativePath": "img/Teams/quinta.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Teams\\quinta.png"
     },
     {
       "Identity": "C:\\Users\\57267874800\\Desktop\\projeto-gamer\\wwwroot\\img\\Teams\\sexta.png",
