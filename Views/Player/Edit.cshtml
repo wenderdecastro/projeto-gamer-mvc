@@ -29,7 +29,7 @@ else{
 }
 </html> *@
 
-@model Team
+@model Player
 
 @{
     ViewData["Title"] = "Edit";
@@ -65,6 +65,16 @@ else{
 
                 <input class="campo-entrada" type="text" name="Name" value="@ViewBag.player.Name">
                 <input class="campo-entrada" type="email" name="Email" value="@ViewBag.player.Email">
+                <input class="campo-entrada" type="password" name="Password" value="@ViewBag.player.Password">
+
+                <select class="campo-entrada" id="equipe-select" name="PlayerTeam" required>
+
+                @foreach (Team t in ViewBag.Team)
+                {
+                <option value="@t.Id">@t.Name</option>
+                }
+
+                </select>
                 
                 <button type="submit" >Atualizar</button>
  

@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@model Player
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -48,13 +49,14 @@
                 <input type="checkbox" id="mostra-esconde-navmenu">
                 <div class="nav-bkg">
                     <nav>
-                        @if (ViewBag.UserName != null){
                         <a asp-area="" asp-controller="Home" asp-action="Index">Início</a>
+                        @if (ViewBag.UserName != null){
                         <a asp-area="" asp-controller="Player" asp-action="Index">Jogadores</a>
                         <a asp-area="" asp-controller="Team" asp-action="Index">Equipes</a>
-                        <a href="#">Notícias</a>
                         
                         }
+                        <a href="#noticias">Notícias</a>
+                        
 
                         
                         <a class="phone-box">

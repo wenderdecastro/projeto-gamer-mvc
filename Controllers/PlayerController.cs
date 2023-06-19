@@ -75,6 +75,7 @@ namespace projeto_gamer.Controllers
             Player foundPlayer = c.Player.First(e => e.PlayerId == id);
 
             ViewBag.Player = foundPlayer;
+            ViewBag.Team = c.Team.ToList();
 
             return View("Edit");
 
@@ -92,10 +93,16 @@ namespace projeto_gamer.Controllers
 
             newPlayer.Email = form["Email"].ToString();
 
+            newPlayer.Password = form["Password"].ToString();
+
+            newPlayer.Id = int.Parse(form["PlayerTeam"].ToString());
+
             Player foundPlayer = c.Player.First(x => x.PlayerId == newPlayer.PlayerId);
 
             foundPlayer.Name = newPlayer.Name;
             foundPlayer.Email = newPlayer.Email;
+            foundPlayer.Password = newPlayer.Password;
+            foundPlayer.Id = newPlayer.Id;
 
             c.Player.Update(foundPlayer);
 
